@@ -1,0 +1,33 @@
+.login{
+    width: 500px;
+    margin:0 auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px 1px #5cbdaa;
+    padding:40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.login h2{
+    color:#5cbdaa;
+}
+.login p{
+    text-align: center;
+    padding:0;
+}
+.login input{
+    width: 60%;
+    height: 40px;
+    border: none;
+    background-color: #5cbdaa;
+    outline:none;
+    padding:5px;
+    color:#fff;
+    box-sizing: border-box;
+}
+.login input[type="button"]{
+    background-color: #FF5722;
+}
+
+.login input[type="button"]:hover{
+    background-color: #5cbdaa;
+}
