@@ -2,17 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
-  selector: 'app-menus',
-  templateUrl: './menus.component.html',
-  styleUrls: ['./menus.component.css']
+  selector: 'app-menu1',
+  templateUrl: './menu1.component.html',
+  styleUrls: ['./menu1.component.css']
 })
-export class MenusComponent implements OnInit {
+export class Menu1Component implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
   }
   menuClick(event:any):void{
+    $('.menus').hide(500);
     $(event.target).next().show(500);
   }
 

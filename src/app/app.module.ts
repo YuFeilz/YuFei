@@ -7,7 +7,11 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { MainComponent } from './main/main.component';
 import { ContentComponent } from './business/content/content.component';
-import { MenusComponent } from './business/menus/menus.component';
+
+import { Menu1Component } from './business/menus/menu1/menu1.component';
+import { Menu2Component } from './business/menus/menu2/menu2.component';
+import { Menu3Component } from './business/menus/menu3/menu3.component';
+import { Menu4Component } from './business/menus/menu4/menu4.component';
 
 
 @NgModule({
@@ -16,7 +20,10 @@ import { MenusComponent } from './business/menus/menus.component';
     LoginComponent,
     MainComponent,
     ContentComponent,
-    MenusComponent
+    Menu1Component,
+    Menu2Component,
+    Menu3Component,
+    Menu4Component
   ],
   imports: [
     BrowserModule,
