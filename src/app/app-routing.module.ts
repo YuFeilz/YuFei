@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes,RouterModule } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
+import { MainModule } from './main/main.module';
 import { MainComponent } from './main/main.component';
  
-const routes:Routes=[
+const childrenRoutes:Routes=[
   { path:'login',component:LoginComponent },
   { path:'main',component:MainComponent },
   { path:'',redirectTo:'/login',pathMatch:'full' }
@@ -12,7 +13,7 @@ const routes:Routes=[
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(childrenRoutes)
   ],
   declarations: [],
   exports:[

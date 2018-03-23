@@ -6,8 +6,10 @@
     <div class="nav">
       <nav>
         <ul>
-          <li class="active">模块一</li>
-          <li>模块二</li>
+          <li class="active">
+            <a routerLink="/menu1">模块一</a>
+          </li>
+          <li><a routerLink="/menu2">模块二</a></li>
           <li>模块三</li>
           <li>模块四</li>
         </ul>
@@ -16,7 +18,7 @@
   </div>
   <div class="main-content clearfix">
     <div class="left-menus">
-      <app-menu1></app-menu1>
+      <router-outlet></router-outlet>
     </div>
     <div class="rigth-business">hahhaha</div>
   </div>
