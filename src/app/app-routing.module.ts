@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes,RouterModule } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
-import { MainModule } from './main/main.module';
 import { MainComponent } from './main/main.component';
  
 const childrenRoutes:Routes=[
