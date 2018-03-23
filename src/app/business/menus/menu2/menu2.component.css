@@ -1,3 +1,17 @@
+.main-content>div{
+    float: left;
+}
+.main-content{
+    height: 100%;
+    width: 100%;
+    padding-top:60px;
+}
+.left-menus{
+    width: 200px;
+    border-right: 2px solid #1AA094;
+    background-color:  #393D49;
+    height: 100%;
+}
 ul>li{
     color:#fff;
 }

@@ -15,6 +15,7 @@ import { Menu4Component } from './business/menus/menu4/menu4.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MainRoutingModule  } from './main/main-routing.module';
+import { Menu1RoutingModule } from './business/menus/menu1/menu1-routing.module';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { MainRoutingModule  } from './main/main-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MainRoutingModule
+    Menu1RoutingModule,
+    MainRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
