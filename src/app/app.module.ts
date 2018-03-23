@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
-// import { MainModule } from './main/main.module';
+
 import { ContentComponent } from './business/content/content.component';
 
 import { Menu1Component } from './business/menus/menu1/menu1.component';

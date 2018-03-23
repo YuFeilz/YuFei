@@ -27,15 +27,19 @@
 }
 .nav ul>li{
     float: left;
-    color:#fff;
+}
+.nav ul>li a{
     height: 60px;
     line-height: 60px;
+    color:#fff;
+    text-decoration: none;
+    float: left;
     padding:0 20px;
 }
-.nav ul>li.active{
+.nav ul>li a.active{
     background-color: #000;
 }
-.nav ul>li:hover{
+.nav ul>li a:hover{
     border-bottom:5px solid #393D49;
 }
 

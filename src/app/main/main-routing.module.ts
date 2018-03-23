@@ -3,12 +3,14 @@ import { Routes,RouterModule } from '@angular/router';
 
 import { Menu1Component } from '../business/menus/menu1/menu1.component';
 import { Menu2Component } from '../business/menus/menu2/menu2.component';
+import { Menu3Component } from '../business/menus/menu3/menu3.component';
+import { Menu4Component } from '../business/menus/menu4/menu4.component';
 import { MainComponent } from './main.component';
 
 const mainRoutes:Routes=[
     { 
       path: '',
-      component:MainComponent,
+      component:MainComponent,  
       children:[
         {
           path:'menu1',
@@ -17,6 +19,14 @@ const mainRoutes:Routes=[
         {
           path:'menu2',
           component:Menu2Component
+        },
+        {
+          path:'menu3',
+          component:Menu3Component
+        },
+        {
+          path:'menu4',
+          component:Menu4Component
         }
       ]
       
