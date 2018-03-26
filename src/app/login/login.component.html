@@ -1,12 +1,14 @@
-<div class="login">
-    <h2 class="title">后台管理系统</h2>
-    <p>
-        <input #username type="username" value="admin">
-    </p>
-    <p>
-        <input #psd type="password" value="123456">
-    </p>
-    <!-- 通过$evnet对象获取用户输入，将事件的整个载荷传递给组件的事件处理器 -->
-    <input type="button" (click)="login($event)" value="登录">
+<div class="w">
+    <div class="login">
+        <h2 class="title">后台管理系统</h2>
+        <p>
+            <input #username type="username" value="admin">
+        </p>
+        <p>
+            <input #psd type="password" value="123456">
+        </p>
+        <!-- 通过$evnet对象获取用户输入，将事件的整个载荷传递给组件的事件处理器 -->
+        <input type="button" (click)="login($event)" value="登录">
+    </div>
 </div>
 
