@@ -3,7 +3,7 @@ import { Routes,RouterModule } from '@angular/router';
 
 import { MainsComponent } from './mains.component';
 
-import { Menu1Component } from '../business/menus/menu1/menu1.component';
+// import { Menu1Component } from '../business/menus/menu1/menu1.component';
 import { Menu2Component } from '../business/menus/menu2/menu2.component';
 import { Menu3Component } from '../business/menus/menu3/menu3.component';
 import { Menu4Component } from '../business/menus/menu4/menu4.component';
@@ -15,11 +15,11 @@ const mainRoutes:Routes=[
       children:[
         { 
           path:'',
-          component:Menu1Component
+          loadChildren:'app/business/menus/menu1/menu1.module#Menu1Module'
         },
         {
           path:'menu1',
-          component:Menu1Component
+          loadChildren:'app/business/menus/menu1/menu1.module#Menu1Module'
         },
         {
           path:'menu2',
