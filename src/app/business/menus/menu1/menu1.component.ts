@@ -16,5 +16,4 @@ export class Menu1Component implements OnInit {
     $('.menus').hide(500);
     $(event.target).next().show(500);
   }
-
 }

@@ -1,5 +1,16 @@
-.main-content>div{
+/* .main-content>div{
     float: left;
+} */
+.clearfix:after{
+    content:'';
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom:1;
 }
 .main-content{
     height: 100%;
@@ -8,12 +19,30 @@
 }
 .left-menus{
     width: 200px;
-    border-right: 2px solid #1AA094;
+    border-right: 3px solid #1AA094;
     background-color:  #393D49;
     height: 100%;
+    float: left;
+}
+.rigth-business{
+    overflow: auto;
+}
+.rigth-business ul{
+    width:100%;
+    margin: 10px 0;
+    padding:0;
+    border-bottom: 1px solid #555;
+}
+.rigth-business ul>li{
+    color:#000;
+    float: left;
+    padding:6px;
+    border:1px solid #ccc;
+    margin:0 5px;
 }
 ul>li{
     color:#fff;
+   
 }
 ul{
     padding:10px;

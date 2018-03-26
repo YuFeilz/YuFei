@@ -11,10 +11,6 @@ const Menu1Routes:Routes=[
             {
                 path:'',
                 component:ContentComponent
-            },
-            {
-                path:'content',
-                component:ContentComponent
             }
         ]
     }
