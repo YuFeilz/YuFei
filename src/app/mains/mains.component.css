@@ -28,13 +28,13 @@
 .nav ul>li{
     float: left;
 }
-.menus{
+.menus-sm{
     width: 55px;
     height:60px;
     line-height: 60px;
     padding:15px;
 }
-.menus span{
+.menus-sm span{
     float: left;
     width: 25px;
     height: 2px;
@@ -49,10 +49,10 @@
     float: left;
     padding:0 20px;
 }
-.nav ul>li a.active,.menus.active{
+.nav ul>li a.active,.menus-sm.active{
     background-color: #000;
 }
-.nav ul>li a:hover,.menus:hover{
+.nav ul>li a:hover,.menus-sm:hover{
     border-bottom:5px solid #393D49;
 }
 

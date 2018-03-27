@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
@@ -7,6 +7,7 @@ import * as $ from 'jquery';
   styleUrls: ['./menu2.component.css']
 })
 export class Menu2Component implements OnInit {
+  @Input() isShow=true
 
   constructor() { }
 
