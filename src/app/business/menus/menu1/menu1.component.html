@@ -2,41 +2,14 @@
   <div class="left-menus">
     <nav>
       <ul class="menu-lg">
-        <li>
-          <span class="spans active" (click)="menuClick($event)">菜单一</span>
-          <ul class="hide menus">
-            <li><a routerLink="./content" routerLinkActive="active">子菜单一</a></li>
-            <li><a >子菜单二</a></li>
-            <li><a>子菜单三</a></li>
-            <li><a>子菜单四</a></li>
+        <li *ngFor="let menu of menus">
+          <span class="spans active" (click)="menu.menuClick($event)">{{menu.title}}</span>
+          <ul class="menus" [@listState]="menu.state">
+            <li><a [routerLink]="menu.children[4]" routerLinkActive="active">{{menu.children[0]}}</a></li>
+            <li><a >{{menu.children[1]}}</a></li>
+            <li><a>{{menu.children[2]}}</a></li>
+            <li><a>{{menu.children[3]}}</a></li>
           </ul>
-        </li>
-        <li>
-          <span class="spans" (click)="menuClick($event)">菜单二</span>
-          <ul class="hide menus">
-            <li><a>子菜单一</a></li>
-            <li><a>子菜单二</a></li>
-            <li><a>子菜单三</a></li>
-            <li><a>子菜单四</a></li>
-          </ul>
-        </li>
-        <li>
-          <span class="spans" (click)="menuClick($event)">菜单三</span>
-          <ul class="hide menus">
-              <li><a>子菜单一</a></li>
-              <li><a>子菜单二</a></li>
-              <li><a>子菜单三</a></li>
-              <li><a>子菜单四</a></li>
-            </ul>
-        </li>
-        <li>
-          <span class="spans" (click)="menuClick($event)">菜单四</span>
-          <ul class="hide menus">
-              <li><a>子菜单一</a></li>
-              <li><a>子菜单二</a></li>
-              <li><a>子菜单三</a></li>
-              <li><a>子菜单四</a></li>
-            </ul>
         </li>
       </ul>
     </nav>
