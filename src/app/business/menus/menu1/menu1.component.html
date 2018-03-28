@@ -5,10 +5,7 @@
         <li *ngFor="let menu of menus">
           <span class="spans active" (click)="menu.menuClick($event)">{{menu.title}}</span>
           <ul class="menus" [@listState]="menu.state">
-            <li><a [routerLink]="menu.children[4]" routerLinkActive="active">{{menu.children[0]}}</a></li>
-            <li><a >{{menu.children[1]}}</a></li>
-            <li><a>{{menu.children[2]}}</a></li>
-            <li><a>{{menu.children[3]}}</a></li>
+            <li *ngFor="let child of menu.children"><a [routerLink]="child.url" routerLinkActive="active">{{child.name}}</a></li>
           </ul>
         </li>
       </ul>
@@ -17,8 +14,6 @@
   <div class="rigth-business">
     <ul class="clearfix">
       <li>首页</li>
-      <li>1</li>
-      <li>2</li>
     </ul>
     <router-outlet></router-outlet>
   </div>
