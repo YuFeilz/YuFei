@@ -3,8 +3,9 @@
     <nav>
       <ul class="menu-lg">
         <li *ngFor="let menu of menus">
-          <span class="spans active" (click)="menu.menuClick($event)">{{menu.title}}</span>
-          <ul class="menus" [@listState]="menu.state">
+          <a class="a-upper" *ngIf="menu.children!=0" (click)="menu.menuClick($event)">{{menu.title}}</a>
+          <a class="a-upper" *ngIf="menu.children==0" [routerLink]="menu.url" routerLinkActive="active" (click)="menu.menuClick($event)">{{menu.title}}</a>
+          <ul *ngIf="menu.children!=0" class="menus" [@listState]="menu.state">
             <li *ngFor="let child of menu.children"><a [routerLink]="child.url" routerLinkActive="active">{{child.name}}</a></li>
           </ul>
         </li>

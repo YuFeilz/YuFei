@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-
+  dateTime:Date
   constructor() { }
 
   ngOnInit() {
+    setInterval(()=>{
+      this.dateTime=new Date();
+    },100)
   }
 
 }

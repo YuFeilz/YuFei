@@ -30,6 +30,6 @@ export class Menu1Component implements OnInit {
     this.menus=menusService.menus;
    }
   ngOnInit() {
-    console.log(this.menus)
+    
   }
 }

@@ -1,27 +1,57 @@
-.form-grounp{
-    display: inline-block;
-    padding:10px;
+.w{
+    padding:0 10px;
 }
-.form-grounp label{
-    width: 80px;
+.welc{
+    background-color: #ffcece;
+    padding:15px 5px;
+    margin:5px 0;
+    color:#a94442;
+    border-left:5px solid #1AA094;
 }
-.form-grounp input{
-    width: 200px;
-    height: 30px;
-    border:1px solid #ccc;
+.sections{
+    width: 32.33%;
+    margin:0 .5%;
+    height:84px;
+    margin-bottom: 10px;
+    float: left;
     border-radius: 5px;
-    padding-left: 5px;
+    box-shadow:0 0 10px 1px #ccc;
 }
-.tables {
-    padding:10px;
+.sections section>div{
+    float: left;
 }
-.tables table{
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 5px;
+.pull-left{
+    width: 40%;
+    height: 84px; 
+    background-size: 100%;
 }
-.tables table th,.tables table td{
-    border:1px solid #ccc;
-    height: 30px;
+.artc1{
+    background: url('assets/img/artc1.jpg') no-repeat;
+}
+.artc2{
+    background: url('assets/img/artc2.jpg') no-repeat;
+}
+.sate{
+    background: url('assets/img/sate.jpg') no-repeat;
+}
+.vip1{
+    background: url('assets/img/vip1.jpg') no-repeat;
+}
+.vip2{
+    background: url('assets/img/vip2.jpg') no-repeat;
+}
+.link{
+    background: url('assets/img/link.jpg') no-repeat;
+}
+.pull-right h4,.pull-right p{
+    color:#555;
     text-align: center;
+    margin:0;
+}
+.pull-right{
+    width: 60%;
+    height:100%;
+}
+.pull-right h4{
+    padding:10px 0;
 }

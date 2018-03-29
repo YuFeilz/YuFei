@@ -1,7 +1,7 @@
 <div class="main-content clearfix">
     <div class="left-menus">
       <nav>
-        <ul class="menu-lg" *ngIf="!isShow">
+        <ul class="menu-lg">
           <li>
             <span (click)="menuClick($event)">菜单一</span>
             <ul class="hide menus">
@@ -38,12 +38,6 @@
                 <li>子菜单四</li>
               </ul>
           </li>
-        </ul>
-        <ul class="menu-sm" *ngIf="isShow">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
         </ul>
       </nav>
     </div>

@@ -1,30 +1,28 @@
 export const All_menus=[
-    {title:'菜单一',
+    {title:'后台首页',
+    url:'./content',
     children:[
-        {name:'子菜单一',url:'./content'},
-        {name:'子菜单二',url:'1'},
-        {name:'子菜单三',url:'2'},
-        {name:'子菜单四',url:'3'}
     ]},
-    {title:'菜单二',
+    {title:'我的面板',
+    url:'',
     children:[
-        {name:'子菜单一',url:'4'},
-        {name:'子菜单二',url:'5'},
-        {name:'子菜单三',url:'6'},
-        {name:'子菜单四',url:'7'}
+        {name:'个人信息',url:'./userinfo'},
+        {name:'修改密码',url:'./password'},
+        {name:'日志信息',url:'./loginfo'}
     ]},
-    {title:'菜单三',
+    {title:'系统设置',
+    url:'',
     children:[
-        {name:'子菜单一',url:'8'},
-        {name:'子菜单二',url:'9'},
-        {name:'子菜单三',url:'10'},
-        {name:'子菜单四',url:'12'}
+        {name:'用户管理',url:'./user-management'},
+        {name:'角色管理',url:'./rule-management'},
+        {name:'菜单管理',url:'./list-management'},
+        {name:'系统参数配置',url:'./sys-option-management'},
+        {name:'系统配置管理',url:'./sys-config-management'},
     ]},
-    {title:'菜单四',
+    {title:'项目文档',
+    url:'',
     children:[
-        {name:'子菜单一',url:'11'},
-        {name:'子菜单二',url:'13'},
-        {name:'子菜单三',url:'14'},
-        {name:'子菜单四',url:'15'}
+        {name:'项目图标示例',url:'./project-demo'},
+        {name:'文档参数说明',url:'./text-option'}
     ]},
   ]
