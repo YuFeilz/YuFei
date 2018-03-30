@@ -23,4 +23,18 @@ ul,li{
 .clearfix{
     zoom: 1;
 }
+.content-banner{
+    background-color: lightblue;
+}
+.content-banner h3{
+    padding:15px;
+    text-align: center;
+    color:#fff;
+    font-weight: normal;
+    margin:0
+}
+.content-banner div{
+    padding:10px;
+    text-align: center;
+}
     /* You can add global styles to this file, and also import other style files */

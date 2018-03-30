@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 
 import { Menu1Component } from './menu1.component';
-import { ContentComponent } from '../../content/content.component';
+// import { ContentComponent } from '../../content/content.component';
 import { UserinfoComponent } from '../../user/userinfo/userinfo.component';
 import { Menu1RoutingModule } from './menu1-routing.module';
 import { PasswordComponent } from '../../user/password/password.component';
@@ -25,7 +25,7 @@ import { TextOptionComponent } from '../../text/text-option/text-option.componen
   declarations:[
     Menu1Component,
     UserinfoComponent,
-    ContentComponent,
+    // ContentComponent,
     PasswordComponent,
     LoginfoComponent,
     UserManagementComponent,

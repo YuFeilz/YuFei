@@ -4,7 +4,7 @@
 .welc{
     background-color: #ffcece;
     padding:15px 5px;
-    margin:5px 0;
+    margin:15px 0;
     color:#a94442;
     border-left:5px solid #1AA094;
 }
@@ -26,22 +26,22 @@
     background-size: 100%;
 }
 .artc1{
-    background: url('assets/img/artc1.jpg') no-repeat;
+    background: url('/assets/img/artc1.jpg') no-repeat;
 }
 .artc2{
-    background: url('assets/img/artc2.jpg') no-repeat;
+    background: url('/assets/img/artc2.jpg') no-repeat;
 }
 .sate{
-    background: url('assets/img/sate.jpg') no-repeat;
+    background: url('/assets/img/sate.jpg') no-repeat;
 }
 .vip1{
-    background: url('assets/img/vip1.jpg') no-repeat;
+    background: url('/assets/img/vip1.jpg') no-repeat;
 }
 .vip2{
-    background: url('assets/img/vip2.jpg') no-repeat;
+    background: url('/assets/img/vip2.jpg') no-repeat;
 }
 .link{
-    background: url('assets/img/link.jpg') no-repeat;
+    background: url('/assets/img/link.jpg') no-repeat;
 }
 .pull-right h4,.pull-right p{
     color:#555;
@@ -54,4 +54,33 @@
 }
 .pull-right h4{
     padding:10px 0;
+}
+
+.tables>div{
+    float: left;
+    width:49%;
+    margin:.5%;
+    box-shadow: 0 0 10px 1px #ccc;
+}
+.tables>div h4{
+    padding:15px 10px;
+    font-weight: normal;
+    margin:0;
+    border-bottom: 1px solid #ccc;
+    color:#555;
+}
+.sys-overview table{
+    margin:2%;
+    border-collapse: collapse;
+    width:96%;
+    
+}
+.sys-overview table td{
+    color:#555;
+    border:1px solid #ccc;
+    padding:10px 0;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes,RouterModule } from '@angular/router';
 
 import { Menu1Component } from './menu1.component';
-import { ContentComponent } from '../../content/content.component';
+// import { ContentComponent } from '../../content/content.component';
 import { UserinfoComponent } from '../../user/userinfo/userinfo.component';
 import { PasswordComponent } from '../../user/password/password.component';
 import { LoginfoComponent } from '../../user/loginfo/loginfo.component';
@@ -21,11 +21,11 @@ const Menu1Routes:Routes=[
         children:[
             {
                 path:'',
-                component:ContentComponent
+                loadChildren:'app/business/content/content.module#ContentModule'
             },
             {
                 path:'content',
-                component:ContentComponent
+                loadChildren:'app/business/content/content.module#ContentModule'
             },
             {
                 path:'userinfo',
