@@ -1,7 +1,7 @@
 <div class="main">
   <div class="header clearfix">
     <div class="title">
-      <h2>后台管理系统</h2>
+      <h2>YuFeilz后台管理系统</h2>
     </div>
     <div class="nav">
       <nav>
@@ -23,7 +23,7 @@
     </div>
     <div class="user-info" (mouseover)="onMouseover()" (mouseout)="onMouseout()">
       <img src="assets/img/user.jpg" alt="" >
-      <ul [hidden]="isUserinfo">
+      <ul [@mains]="state">
         <li (click)="user()">个人信息</li>
         <li (click)="password()">修改密码</li>
       </ul>
