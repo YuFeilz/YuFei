@@ -55,5 +55,38 @@
 .nav ul>li a:hover,.menus-sm:hover{
     border-bottom:5px solid #393D49;
 }
-
-
+.logout{
+    position: absolute;
+    right: 0;
+    top:12px;
+}
+.logout button{
+    padding:10px;
+    border:none;
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+.user-info{
+    position: absolute;
+    top:12px;
+    width:100px;
+    right:100px;
+    text-align: center;
+}
+.user-info img{
+    height: 36px;
+    width: 30px;
+    border-radius: 50%;
+}
+.user-info ul{
+    position: absolute;
+    width: 100px;
+}
+.user-info ul>li{
+    padding:10px;
+    text-align: center;
+    border:1px solid #ccc;
+    background-color: #fff;
+}

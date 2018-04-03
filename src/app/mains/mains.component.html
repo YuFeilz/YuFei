@@ -21,6 +21,16 @@
         </ul>
       </nav>
     </div>
+    <div class="user-info" (mouseover)="onMouseover()" (mouseout)="onMouseout()">
+      <img src="assets/img/user.jpg" alt="" >
+      <ul [hidden]="isUserinfo">
+        <li (click)="user()">个人信息</li>
+        <li (click)="password()">修改密码</li>
+      </ul>
+    </div>
+    <div class="logout">
+      <button (click)="logout()">退出登录</button>
+    </div>
   </div>
   <router-outlet></router-outlet>
 </div>

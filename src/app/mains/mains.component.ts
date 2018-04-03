@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,17 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mains.component.css']
 })
 export class MainsComponent implements OnInit {
-  isShow=1
-  constructor() { }
+  isUserinfo=true;
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
-  toggleIsShow():void{
-    if(this.isShow){
-      this.isShow=0;
-    }else{
-      this.isShow=1;
-    }
+  logout():void{
+    setTimeout(()=>{
+      this.router.navigate(['/login']);
+    },3000)
   }
-
+  onMouseover():void{
+    this.isUserinfo=false;
+  }
+  onMouseout():void{
+    this.isUserinfo=true;
+  }
+  user():void{
+    this.router.navigate(['mains/menu1/userinfo']);
+  }
+  password():void{
+    this.router.navigate(['/mains/menu1/password']);
+  }
 }
