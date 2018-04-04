@@ -23,7 +23,6 @@ export class MainsComponent implements OnInit {
     },1500)
   }
   onMouseover():void{
-    // alert(0)
     this.state='shows';
   }
   onMouseout():void{
