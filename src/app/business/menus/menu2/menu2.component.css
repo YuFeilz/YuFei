@@ -7,10 +7,22 @@
     padding-top:60px;
 }
 .left-menus{
+    height:100%;
     width: 200px;
-    border-right: 2px solid #1AA094;
+    float: left;
+}
+.left-menus nav{
+    border-right: 3px solid #1AA094;
     background-color:  #393D49;
     height: 100%;
+    position: fixed;
+    left: 0;
+}
+.hide{
+    display:none;
+}
+.menu-lg{
+    width: 200px;
 }
 ul>li{
     color:#fff;

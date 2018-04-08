@@ -34,4 +34,8 @@ export class MainsComponent implements OnInit {
   password():void{
     this.router.navigate(['/mains/menu1/password']);
   }
+  menusShow():void{
+    const menus=document.getElementsByClassName('left-menus');
+    menus[0].classList.toggle('hide');
+  }
 }
