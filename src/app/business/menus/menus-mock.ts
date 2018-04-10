@@ -24,5 +24,5 @@ export const All_menus=[
     children:[
         {name:'项目图标示例',url:'./project-demo'},
         {name:'文档参数说明',url:'./text-option'}
-    ]},
+    ]}
   ]

@@ -3,8 +3,6 @@ import { Router } from '@angular/router';
 
 import { trigger,state,style,animate,transition, animation } from '@angular/animations';
 import {MainsAnimate} from '../animate';
-
-
 @Component({
   selector: 'app-mains',
   templateUrl: './mains.component.html',
@@ -29,10 +27,10 @@ export class MainsComponent implements OnInit {
     this.state='hides';
   }
   user():void{
-    this.router.navigate(['/mains/menu1/userinfo']);
+    this.router.navigate(['/mains/menu/userinfo']);
   }
   password():void{
-    this.router.navigate(['/mains/menu1/password']);
+    this.router.navigate(['/mains/menu/password']);
   }
   menusShow():void{
     const menus=document.getElementsByClassName('left-menus');

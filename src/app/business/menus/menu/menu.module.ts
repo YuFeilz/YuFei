@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
-import { Menu1Component } from './menu1.component';
+import { MenuComponent } from './menu.component';
 // import { ContentComponent } from '../../content/content.component';
 import { UserinfoComponent } from '../../user/userinfo/userinfo.component';
-import { Menu1RoutingModule } from './menu1-routing.module';
+import { MenuRoutingModule } from './menu-routing.module';
 import { PasswordComponent } from '../../user/password/password.component';
 import { LoginfoComponent } from '../../user/loginfo/loginfo.component';
 import { UserManagementComponent } from '../../sys/user-management/user-management.component';
@@ -20,10 +20,10 @@ import { TextOptionComponent } from '../../text/text-option/text-option.componen
 @NgModule({
   imports:[
       CommonModule,
-      Menu1RoutingModule
+      MenuRoutingModule
   ],
   declarations:[
-    Menu1Component,
+    MenuComponent,
     UserinfoComponent,
     // ContentComponent,
     PasswordComponent,
@@ -37,4 +37,4 @@ import { TextOptionComponent } from '../../text/text-option/text-option.componen
     TextOptionComponent
   ]
 })
-export class Menu1Module{}
+export class MenuModule{}

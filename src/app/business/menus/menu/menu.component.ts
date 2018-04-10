@@ -6,13 +6,13 @@ import { Menus,MenusService } from '../menus.service';
 import {ListAnimate} from '../../../animate';
 
 @Component({
-  selector: 'app-menu1',
-  templateUrl: './menu1.component.html',
-  styleUrls: ['./menu1.component.css'],
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css'],
   animations:[ListAnimate],
   providers:[MenusService]
 })
-export class Menu1Component implements OnInit {
+export class MenuComponent implements OnInit {
   menus:Menus[];
   constructor(
     private routerfo:ActivatedRoute,

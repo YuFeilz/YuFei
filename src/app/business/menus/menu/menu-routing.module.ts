@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes,RouterModule } from '@angular/router';
 
-import { Menu1Component } from './menu1.component';
+import { MenuComponent } from './menu.component';
 // import { ContentComponent } from '../../content/content.component';
 import { UserinfoComponent } from '../../user/userinfo/userinfo.component';
 import { PasswordComponent } from '../../user/password/password.component';
@@ -14,10 +14,10 @@ import { SysConfigManagementComponent } from '../../sys/sys-config-management/sy
 import { ProjectDemoComponent } from '../../text/project-demo/project-demo.component';
 import { TextOptionComponent } from '../../text/text-option/text-option.component';
 
-const Menu1Routes:Routes=[
+const MenuRoutes:Routes=[
     {
         path:'',
-        component:Menu1Component,
+        component:MenuComponent,
         children:[
             {
                 path:'',
@@ -73,13 +73,13 @@ const Menu1Routes:Routes=[
 
 @NgModule({
     imports:[
-        RouterModule.forChild(Menu1Routes)
+        RouterModule.forChild(MenuRoutes)
     ],
     declarations:[],
     exports:[
         RouterModule
     ]
 })
-export class Menu1RoutingModule{
+export class MenuRoutingModule{
 
 }
