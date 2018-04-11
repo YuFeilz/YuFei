@@ -1,18 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { ActivatedRoute } from '@angular/router';
+import * as $ from 'jquery';
 import { trigger,state,style,animate,transition, animation } from '@angular/animations';
+import { Menus,MenusService } from './menus.service'; 
+import {ListAnimate} from '../animate';
+
 import {MainsAnimate} from '../animate';
 @Component({
   selector: 'app-mains',
   templateUrl: './mains.component.html',
   styleUrls: ['./mains.component.css'],
-  animations:[MainsAnimate]
+  animations:[MainsAnimate,ListAnimate],
+  providers:[MenusService]
 })
 export class MainsComponent implements OnInit {
   state='hides';
-  constructor(private router:Router) { }
-
+  menus:Menus[];
+  constructor(
+    private router:Router,
+    private routerfo:ActivatedRoute,
+    private menusService:MenusService
+  ) {
+    this.menus=menusService.menus;
+   }
   ngOnInit() {
   }
   logout():void{

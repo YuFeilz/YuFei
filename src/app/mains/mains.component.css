@@ -19,12 +19,25 @@
 .title{
     color:#fff;
     min-width: 200px;
+    padding-left: 60px;
+    position: relative;
 }
-.title h2{
+.title h4{
     width: 100%;
     text-align: center;
     height: 60px;
     line-height: 60px;
+}
+.title a{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin:auto;
+    left: 10px;
+    top: 10px;
+    background: url('/assets/img/logo.png') no-repeat;
+    background-size: 100%;
+    border-radius: 509%;
 }
 .nav ul>li{
     float: left;
@@ -65,9 +78,10 @@
     top:12px;
 }
 .logout button{
-    padding:10px;
+    padding:5px;
     border:none;
-    background-color: #fff;
+    background-color: rgb(245, 12, 12);
+    color:#fff;
     margin-right: 20px;
     border-radius: 5px;
     outline: none;
@@ -95,5 +109,104 @@
     background-color: #fff;
 }
 .hide{
+    display: none;
+}
+/* 左侧菜单 */
+/* .main-content>div{
+    float: left;
+} */
+.clearfix:after{
+    content:'';
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom:1;
+}
+.main-content{
+    height: 100%;
+    width: 100%;
+    padding-top:60px;
+    overflow: auto;
+}
+.left-menus{
+    height:100%;
+    width: 200px;
+    float: left;
+}
+.left-menus nav{
+    border-right: 3px solid #1AA094;
+    background-color:  #393D49;
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+.hide{
+    display:none;
+}
+.menu-lg{
+    width: 200px;
+}
+.menu-lg li>.a-upper{
+    display: inline-block;
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.a-upper:hover{
+    border-left:5px solid #1AA094;
+}
+.menu-lg li>.a-upper.active{
+    background-color: #1AA094;
+    border-left:5px solid #1AA094;
+}
+a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color:#fff;
+    padding:8px 0 8px 20px;
+}
+span.fa{
+    margin-right:10px;
+}
+.menu-lg .menus li>a:hover{
+    border-left:5px solid #1AA094;
+    background-color: #484c5a;
+}
+.menu-lg .menus li>a.active{
+    border-left:5px solid #1AA094;
+    background-color: #484c5a;
+}
+.menu-sm{
+    width: 40px;
+}
+.rigth-business{
+    overflow: auto;
+    margin-left: 0;
+}
+.rigth-business ul{
+    width:100%;
+    margin: 10px 0;
+    padding:0;
+    border-bottom: 1px solid #555;
+}
+.rigth-business ul>li{
+    color:#000;
+    float: left;
+    padding:6px;
+    border:1px solid #ccc;
+    margin:0 5px;
+}
+ul>li{
+    color:#fff;
+   
+}
+ul.hide{
     display: none;
 }

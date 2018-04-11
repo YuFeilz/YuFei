@@ -1,7 +1,8 @@
 <div class="main">
   <div class="header clearfix">
     <div class="title">
-      <h2>YuFeilz后台管理系统</h2>
+      <a></a>
+      <h4>YuFeilz后台管理系统</h4>
     </div>
     <div class="nav">
       <nav>
@@ -12,7 +13,7 @@
             <span></span>
           </li>
           <li>
-            <a routerLink="./menu1" routerLinkActive="active">系统管理</a>
+            <a routerLink="./content" routerLinkActive="active">系统管理</a>
           </li>
           <li><a routerLink="./menu2" routerLinkActive="active">内容管理</a></li>
           <li>
@@ -22,7 +23,7 @@
       </nav>
     </div>
     <div class="user-info" (mouseover)="onMouseover()" (mouseout)="onMouseout()">
-      <img src="assets/img/user.png" alt="" >
+      <img src="assets/img/user.jpg" alt="" >
       <ul [@mains]="state">
         <li (click)="user()">个人信息</li>
         <li (click)="password()">修改密码</li>
@@ -32,5 +33,25 @@
       <button (click)="logout()">退出登录</button>
     </div>
   </div>
-  <router-outlet></router-outlet>
+  <div class="main-content clearfix">
+    <div class="left-menus">
+      <nav>
+        <ul class="menu-lg">
+          <li *ngFor="let menu of menus">
+            <a class="a-upper" *ngIf="menu.children!=0" (click)="menu.menuClick($event)"><span class="fa" [ngClass]="menu.icon"></span>{{menu.title}}</a>
+            <a class="a-upper" *ngIf="menu.children==0" [routerLink]="menu.url" routerLinkActive="active" (click)="menu.menuClick($event)"><span class="fa" [ngClass]="menu.icon"></span>{{menu.title}}</a>
+            <ul *ngIf="menu.children!=0" class="menus" [@listState]="menu.state">
+              <li *ngFor="let child of menu.children"><a [routerLink]="child.url" routerLinkActive="active">{{child.name}}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="rigth-business">
+      <ul class="clearfix">
+        <li>首页</li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

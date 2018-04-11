@@ -12,8 +12,9 @@
     text-align: center;
     box-sizing: border-box;
 }
-.login h2{
+.login h4{
     color:#5cbdaa;
+    margin-bottom: 20px;
 }
 .login p{
     text-align: center;
@@ -29,7 +30,7 @@
     color:#fff;
     box-sizing: border-box;
 }
-.login input[type="button"]{
+.login input[type="submit"]{
     background-color: #FF5722;
 }
 
