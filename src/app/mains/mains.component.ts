@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ActivatedRoute } from '@angular/router';
-import * as $ from 'jquery';
+import { ActivatedRoute } from '@angular/router'; 
 import { trigger,state,style,animate,transition, animation } from '@angular/animations';
 import { Menus,MenusService } from './menus.service'; 
 import {ListAnimate} from '../animate';
@@ -38,10 +37,10 @@ export class MainsComponent implements OnInit {
     this.state='hides';
   }
   user():void{
-    this.router.navigate(['/mains/menu/userinfo']);
+    this.router.navigate(['/mains/userinfo']);
   }
   password():void{
-    this.router.navigate(['/mains/menu/password']);
+    this.router.navigate(['/mains/password']);
   }
   menusShow():void{
     const menus=document.getElementsByClassName('left-menus');

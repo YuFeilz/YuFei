@@ -5,7 +5,7 @@ export const MainsAnimate=trigger('mains',[
         'top':'-300%'
     })),
     state('shows',style({
-        'top':'40px'
+        'top':'36px'
     })),
     transition('hides<=>shows',animate('.5s .5s cubic-bezier(0.2, 0.8, 0.3, 1.8)'))
 ])
