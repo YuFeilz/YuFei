@@ -12,7 +12,7 @@ export class Menus{
   ) { }
   menuClick():void{
     this.state=this.state==='hide'?'show':'hide';
-  }
+  } 
 }
 
 const all_menus=All_menus.map(value=>new Menus(value.title,value.icon,'hide',value.url,value.children))
