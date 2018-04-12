@@ -2,46 +2,75 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router'; 
 import { trigger,state,style,animate,transition, animation } from '@angular/animations';
-import { Menus,MenusService } from './menus.service'; 
-import {ListAnimate} from '../animate';
+import { MenusService } from './menus.service'; 
+import {MainsAnimate,ListAnimate,headerNav} from '../animate';
 
-import {MainsAnimate} from '../animate';
 @Component({
   selector: 'app-mains',
   templateUrl: './mains.component.html',
   styleUrls: ['./mains.component.css'],
-  animations:[MainsAnimate,ListAnimate],
+  animations:[MainsAnimate,ListAnimate,headerNav],
   providers:[MenusService]
 })
 export class MainsComponent implements OnInit {
   state='hides';
-  menus:Menus[];
+  menus;
+  headerNav;
   constructor(
     private router:Router,
     private routerfo:ActivatedRoute,
     private menusService:MenusService
   ) {
-    this.menus=menusService.menus;
+    this.menus=menusService.menus.menuData1;
+    this.headerNav=menusService.menus.headerNav;
    }
   ngOnInit() {
+    
   }
+  /**
+   * 
+   * @param 点击头部导航元素菜单栏显示对应菜单
+   */
+  toggleMenus(nav):void{
+    const id=nav.id;
+    this.menus=this.menusService.menus['menuData'+id];
+    nav.isActive=!nav.isActive;
+  }
+  /**
+   * @param 退出登录
+   */
   logout():void{
     setTimeout(()=>{
       this.router.navigate(['/login']);
     },1500)
   }
+  /**
+   * @param 鼠标移入用户头像显示用户信息列表
+   */
   onMouseover():void{
     this.state='shows';
   }
+  /**
+   * @param 鼠标移出用户头像隐藏用户信息列表
+   */
   onMouseout():void{
     this.state='hides';
   }
+  /**
+   * @param 点击用户信息列表导航到对应页面
+   */
   user():void{
     this.router.navigate(['/mains/userinfo']);
   }
+  /**
+   * @param 点击修改密码导航到修改名密码页面
+   */
   password():void{
     this.router.navigate(['/mains/password']);
   }
+  /**
+   * @param 左侧菜单栏缩放
+   */
   menusShow():void{
     const menus=document.getElementsByClassName('left-menus');
     menus[0].classList.toggle('hide');

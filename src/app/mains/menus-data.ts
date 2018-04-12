@@ -1,8 +1,13 @@
 export class MENUS{
-    menuData1:Array<MenuData>;
-    menuData2:Array<MenuData>;
-    menuData3:Array<MenuData>;
+    headerNav:Array<Object>;
+    menuData1:Array<Menus>;
+    menuData2:Array<Menus>;
+    menuData3:Array<Menus>;
 }
-export class MenuData{
-    
-}
+export class Menus{ 
+    title:string;
+    icon:string;
+    state:string;
+    url?:string;
+    children?:Array<Object>;
+  }

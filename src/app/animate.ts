@@ -20,5 +20,14 @@ export const ListAnimate=trigger(
             'overflow':'auto'
         })),
         transition('hide<=>show',animate(500))
-    ]
-)
+    ])
+export const headerNav=trigger('active',[
+    state('actived',style({
+        'background-color': '#1AA094',
+        'border-bottom':'5px solid #484c5a'
+    })),
+    state('unactived',style({
+        'background-color': 'transparent',
+        'border-bottom':'none'
+    }))
+])

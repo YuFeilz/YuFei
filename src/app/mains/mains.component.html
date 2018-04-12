@@ -12,12 +12,8 @@
             <span></span>
             <span></span>
           </li>
-          <li>
-            <a routerLink="./content" routerLinkActive="active">系统管理</a>
-          </li>
-          <li><a routerLink="./menu2" routerLinkActive="active">内容管理</a></li>
-          <li>
-            <a routerLink="./menu3" routerLinkActive="active">扩展模块</a>
+          <li *ngFor="let nav of headerNav">
+            <a [id]="nav.id" (click)="toggleMenus(nav)" [ngClass]="{'active':nav.isActive}">{{nav.name}}</a>
           </li>
         </ul>
       </nav>
