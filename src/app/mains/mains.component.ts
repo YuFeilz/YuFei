@@ -34,7 +34,10 @@ export class MainsComponent implements OnInit {
   toggleMenus(nav):void{
     const id=nav.id;
     this.menus=this.menusService.menus['menuData'+id];
-    nav.isActive=!nav.isActive;
+    for(let navItem of this.headerNav){
+      navItem.isActive=false;
+    }
+    nav.isActive=true;
   }
   /**
    * @param 退出登录
@@ -71,8 +74,10 @@ export class MainsComponent implements OnInit {
   /**
    * @param 左侧菜单栏缩放
    */
-  menusShow():void{
-    const menus=document.getElementsByClassName('left-menus');
-    menus[0].classList.toggle('hide');
+  menusShow(menu):void{
+    for(let menu of this.menus){
+      menu.isShow=true;
+    }
+    menu.isShow=!menu.isShow;
   }
 }

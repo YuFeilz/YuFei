@@ -20,13 +20,14 @@ export const All_menus:MENUS={
     menuData1:[
         {'title':'后台首页',
         'icon':'fa-address-card',
+        'isShow':true,
         'state':'hide',
         'url':'./content',
-        'children':[
-        ]},
+        'children':[]
+        },
         {'title':'我的面板',
-        'url':'',
-        'icon':'fa-telegram ',   
+        'icon':'fa-telegram ', 
+        'isShow':true,  
         'state':'hide',
         'children':[
             {'name':'个人信息','url':'./userinfo'},
@@ -35,8 +36,8 @@ export const All_menus:MENUS={
         ]},
         {'title':'系统设置',
         'icon':'fa-cogs ',
+        'isShow':true,  
         'state':'hide',
-        'url':'',
         'children':[
             {'name':'用户管理','url':'./user-management'},
             {'name':'角色管理','url':'./rule-management'},
@@ -46,8 +47,8 @@ export const All_menus:MENUS={
         ]},
         {'title':'项目文档',
         'icon':'fa-align-justify',
+        'isShow':true,  
         'state':'hide',
-        'url':'',
         'children':[
             {'name':'项目图标示例','url':'./project-demo'},
             {'name':'文档参数说明','url':'./text-option'}
@@ -56,14 +57,15 @@ export const All_menus:MENUS={
     menuData2:[
         {'title':'后台首页2',
         'icon':'fa-address-card',
+        'isShow':true,  
         'state':'hide',
         'url':'./content',
         'children':[
         ]},
         {'title':'我的面板',
-        'icon':'fa-telegram ',   
+        'icon':'fa-telegram ',
+        'isShow':true,     
         'state':'hide',
-        'url':'',
         'children':[
             {'name':'个人信息','url':'./userinfo'},
             {'name':'修改密码','url':'./password'},
@@ -71,8 +73,8 @@ export const All_menus:MENUS={
         ]},
         {'title':'系统设置',
         'icon':'fa-cogs ',
+        'isShow':true,  
         'state':'hide',
-        'url':'',
         'children':[
             {'name':'用户管理','url':'./user-management'},
             {'name':'角色管理','url':'./rule-management'},
@@ -84,14 +86,15 @@ export const All_menus:MENUS={
     menuData3:[
         {'title':'后台首页',
         'icon':'fa-address-card',
+        'isShow':true,  
         'state':'hide',
         'url':'./content',
         'children':[
         ]},
         {'title':'我的面板',
         'icon':'fa-telegram ',
+        'isShow':true,  
         'state':'hide',   
-        'url':'',
         'children':[
             {'name':'个人信息','url':'./userinfo'},
             {'name':'修改密码','url':'./password'},
@@ -99,8 +102,8 @@ export const All_menus:MENUS={
         ]},
         {'title':'系统设置',
         'icon':'fa-cogs ',
+        'isShow':true,  
         'state':'hide',
-        'url':'',
         'children':[
             {'name':'用户管理','url':'./user-management'},
             {'name':'角色管理','url':'./rule-management'},
@@ -110,8 +113,8 @@ export const All_menus:MENUS={
         ]},
         {'title':'项目文档',
         'icon':'fa-align-justify',
+        'isShow':true,
         'state':'hide',
-        'url':'',
         'children':[
             {'name':'项目图标示例','url':'./project-demo'},
             {'name':'文档参数说明','url':'./text-option'}

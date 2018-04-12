@@ -7,7 +7,8 @@ export class MENUS{
 export class Menus{ 
     title:string;
     icon:string;
-    state:string;
+    state?:string;
+    isShow:boolean;
     url?:string;
     children?:Array<Object>;
   }
