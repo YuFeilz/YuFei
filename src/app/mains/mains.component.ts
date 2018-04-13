@@ -82,12 +82,19 @@ export class MainsComponent implements OnInit {
     for(let item of this.menus){
       if(item.id!==menu.id){
         item.isShow=true;
+        item.isActive=false;
       }
     }
-    menu.isShow=!menu.isShow;
+      if(menu.id===4){
+        menu.isShow=true;
+        menu.isActive=true;
+      }else{
+      menu.isShow=!menu.isShow;
+      menu.isActive=!menu.isActive;
+    }
   }
   /**
-   * @param 控制左侧导航显示关闭
+   * @param 控制左侧导航显示关闭    
    */
   slideToggle():void{
     this.slideShow=!this.slideShow;

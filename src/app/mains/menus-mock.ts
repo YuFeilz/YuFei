@@ -22,6 +22,7 @@ export const All_menus:MENUS={
         'id':4,
         'icon':'fa-address-card',
         'isShow':true,
+        'isActive':true,
         'state':'hide',
         'url':'./content',
         'children':[]
@@ -29,7 +30,8 @@ export const All_menus:MENUS={
         {'title':'我的面板',
         'id':5,
         'icon':'fa-telegram ', 
-        'isShow':true,  
+        'isShow':true, 
+        'isActive':false, 
         'state':'hide',
         'children':[
             {'name':'个人信息','url':'./userinfo'},
@@ -40,6 +42,7 @@ export const All_menus:MENUS={
         'id':6,
         'icon':'fa-cogs ',
         'isShow':true,  
+        'isActive':false, 
         'state':'hide',
         'children':[
             {'name':'用户管理','url':'./user-management'},
@@ -53,6 +56,7 @@ export const All_menus:MENUS={
             'id':7,
             'icon':'fa-assistive-listening-systems',
             'isShow':true,
+            'isActive':false, 
             'state':'hide',
             'children':[
                 {'name':'系统参数设置','url':'./xtwh'}
@@ -62,6 +66,7 @@ export const All_menus:MENUS={
         'id':8,
         'icon':'fa-align-justify',
         'isShow':true,  
+        'isActive':false, 
         'state':'hide',
         'children':[
             {'name':'项目图标示例','url':'./project-demo'},
@@ -73,6 +78,7 @@ export const All_menus:MENUS={
         'id':9,
         'icon':'fa-address-card',
         'isShow':true,  
+        'isActive':false, 
         'state':'hide',
         'url':'./content',
         'children':[
@@ -80,7 +86,8 @@ export const All_menus:MENUS={
         {'title':'我的面板',
         'id':10,
         'icon':'fa-telegram ',
-        'isShow':true,     
+        'isShow':true,   
+        'isActive':false,   
         'state':'hide',
         'children':[
             {'name':'个人信息','url':'./userinfo'},
@@ -91,6 +98,7 @@ export const All_menus:MENUS={
         'id':11,
         'icon':'fa-cogs ',
         'isShow':true,  
+        'isActive':false, 
         'state':'hide',
         'children':[
             {'name':'用户管理','url':'./user-management'},
@@ -105,6 +113,7 @@ export const All_menus:MENUS={
         'id':12,
         'icon':'fa-address-card',
         'isShow':true,  
+        'isActive':false, 
         'state':'hide',
         'url':'./content',
         'children':[
@@ -113,6 +122,7 @@ export const All_menus:MENUS={
         'id':13,
         'icon':'fa-telegram ',
         'isShow':true,  
+        'isActive':false, 
         'state':'hide',   
         'children':[
             {'name':'个人信息','url':'./userinfo'},
@@ -123,6 +133,7 @@ export const All_menus:MENUS={
         'id':14,
         'icon':'fa-cogs ',
         'isShow':true,  
+        'isActive':false, 
         'state':'hide',
         'children':[
             {'name':'用户管理','url':'./user-management'},
@@ -135,6 +146,7 @@ export const All_menus:MENUS={
         'id':15,
         'icon':'fa-align-justify',
         'isShow':true,
+        'isActive':false, 
         'state':'hide',
         'children':[
             {'name':'项目图标示例','url':'./project-demo'},

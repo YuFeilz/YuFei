@@ -10,6 +10,7 @@ export class Menus{
     icon:string;
     state?:string;
     isShow:boolean;
+    isActive:boolean;
     url?:string;
     children?:Array<Object>;
   }

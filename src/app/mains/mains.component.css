@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
 }
+/* 头部导航 */
 .header{
     height: 60px;
     width: 100%;
@@ -163,6 +164,9 @@
     border-left:5px solid #484c5a;
 }
 .menu-lg li>.a-upper.active{
+    background-color: #484c5a;
+}
+.menu-lg li>.a-upper.active1{
     background-color: #1AA094;
     border-left:5px solid #484c5a;
 }
@@ -184,23 +188,32 @@ span.fa{
     border-left:5px solid #484c5a;
     background-color: #1AA094;
 }
+/* 右侧导航菜单 */
 .rigth-business{
     overflow: auto;
     margin-left: 0;
 }
-.rigth-business ul{
+.current-item{
     width:100%;
     margin: 10px 0;
     padding:0;
     border-bottom: 1px solid #555;
 }
-.rigth-business ul>li{
+.current-item>li{
     color:#000;
     float: left;
     padding:6px;
     border:1px solid #ccc;
     margin:0 5px;
+    position: relative;
 }
+.current-item>li span{
+    margin-left: 10px;
+}
+.current-item>li:hover{
+    background-color: #ccc;
+}
+/* ul,li的公共样式 */
 ul>li{
     color:#fff;
    

@@ -34,8 +34,8 @@
       <nav>
         <ul class="menu-lg">
           <li *ngFor="let menu of menus">
-            <a class="a-upper" *ngIf="menu.children!=0" (click)="menusShow(menu)"><span class="fa" [ngClass]="menu.icon"></span>{{menu.title}}</a>
-            <a class="a-upper" *ngIf="menu.children==0" [routerLink]="menu.url" routerLinkActive="active"><span class="fa" [ngClass]="menu.icon"></span>{{menu.title}}</a>
+            <a class="a-upper" [ngClass]="{'active':menu.isActive}" *ngIf="menu.children!=0" (click)="menusShow(menu)"><span class="fa" [ngClass]="menu.icon"></span>{{menu.title}}</a>
+            <a class="a-upper" [ngClass]="{'active1':menu.isActive}" *ngIf="menu.children==0" (click)="menusShow(menu)" [routerLink]="menu.url" routerLinkActive="active1"><span class="fa" [ngClass]="menu.icon"></span>{{menu.title}}</a>
             <ul *ngIf="menu.children!=0" class="menus" [hidden]="menu.isShow">
               <li *ngFor="let child of menu.children"><a [routerLink]="child.url" routerLinkActive="active">{{child.name}}</a></li>
             </ul>
@@ -44,8 +44,10 @@
       </nav>
     </div>
     <div class="rigth-business">
-      <ul class="clearfix">
-        <li>首页</li>
+      <ul class="clearfix current-item">
+        <li class="arrow left-arrow"><</li>
+        <li>首页<span>X</span></li>
+        <li class="arrow right-arrow">></li>
       </ul>
       <router-outlet></router-outlet>
     </div>
