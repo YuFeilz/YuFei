@@ -22,11 +22,14 @@ export class MainsComponent implements OnInit {
     private routerfo:ActivatedRoute,
     private menusService:MenusService
   ) {
-    this.menus=menusService.menus.menuData1;
-    this.headerNav=menusService.menus.headerNav;
-   }
-  ngOnInit() {
     
+   }
+   /**
+    * @param 初始化
+    */
+  ngOnInit() {
+    this.menus=this.menusService.menus.menuData1;
+    this.headerNav=this.menusService.menus.headerNav;
   }
   /**
    * 
