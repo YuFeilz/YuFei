@@ -3,19 +3,20 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router'; 
 import { trigger,state,style,animate,transition, animation } from '@angular/animations';
 import { MenusService } from './menus.service'; 
-import {MainsAnimate,ListAnimate,headerNav} from '../animate';
+import {MainsAnimate} from '../animate';
 
 @Component({
   selector: 'app-mains',
   templateUrl: './mains.component.html',
   styleUrls: ['./mains.component.css'],
-  animations:[MainsAnimate,ListAnimate,headerNav],
+  animations:[MainsAnimate],
   providers:[MenusService]
 })
 export class MainsComponent implements OnInit {
   state='hides';
   menus;
   headerNav;
+  slideShow=false;
   constructor(
     private router:Router,
     private routerfo:ActivatedRoute,
@@ -75,9 +76,17 @@ export class MainsComponent implements OnInit {
    * @param 左侧菜单栏缩放
    */
   menusShow(menu):void{
-    for(let menu of this.menus){
-      menu.isShow=true;
+    for(let item of this.menus){
+      if(item.id!==menu.id){
+        item.isShow=true;
+      }
     }
     menu.isShow=!menu.isShow;
+  }
+  /**
+   * @param 控制左侧导航显示关闭
+   */
+  slideToggle():void{
+    this.slideShow=!this.slideShow;
   }
 }

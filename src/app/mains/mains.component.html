@@ -7,7 +7,7 @@
     <div class="nav">
       <nav>
         <ul class="clearfix">
-          <li class="menus-sm clearfix" (click)="menusShow()">
+          <li class="menus-sm clearfix" (click)="slideToggle()">
             <span></span>
             <span></span>
             <span></span>
@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="main-content clearfix">
-    <div class="left-menus">
+    <div class="left-menus" [hidden]="slideShow">
       <nav>
         <ul class="menu-lg">
           <li *ngFor="let menu of menus">

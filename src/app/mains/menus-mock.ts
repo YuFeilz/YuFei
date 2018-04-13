@@ -19,6 +19,7 @@ export const All_menus:MENUS={
     ],
     menuData1:[
         {'title':'后台首页',
+        'id':4,
         'icon':'fa-address-card',
         'isShow':true,
         'state':'hide',
@@ -26,6 +27,7 @@ export const All_menus:MENUS={
         'children':[]
         },
         {'title':'我的面板',
+        'id':5,
         'icon':'fa-telegram ', 
         'isShow':true,  
         'state':'hide',
@@ -35,6 +37,7 @@ export const All_menus:MENUS={
             {'name':'日志信息','url':'./loginfo'}
         ]},
         {'title':'系统设置',
+        'id':6,
         'icon':'fa-cogs ',
         'isShow':true,  
         'state':'hide',
@@ -45,7 +48,18 @@ export const All_menus:MENUS={
             {'name':'系统参数配置','url':'./sys-option-management'},
             {'name':'系统配置管理','url':'./sys-config-management'},
         ]},
+        {
+            'title':'系统维护',
+            'id':7,
+            'icon':'fa-assistive-listening-systems',
+            'isShow':true,
+            'state':'hide',
+            'children':[
+                {'name':'系统参数设置','url':'./xtwh'}
+            ]
+        },
         {'title':'项目文档',
+        'id':8,
         'icon':'fa-align-justify',
         'isShow':true,  
         'state':'hide',
@@ -56,6 +70,7 @@ export const All_menus:MENUS={
       ],
     menuData2:[
         {'title':'后台首页2',
+        'id':9,
         'icon':'fa-address-card',
         'isShow':true,  
         'state':'hide',
@@ -63,6 +78,7 @@ export const All_menus:MENUS={
         'children':[
         ]},
         {'title':'我的面板',
+        'id':10,
         'icon':'fa-telegram ',
         'isShow':true,     
         'state':'hide',
@@ -72,6 +88,7 @@ export const All_menus:MENUS={
             {'name':'日志信息','url':'./loginfo'}
         ]},
         {'title':'系统设置',
+        'id':11,
         'icon':'fa-cogs ',
         'isShow':true,  
         'state':'hide',
@@ -85,6 +102,7 @@ export const All_menus:MENUS={
       ],
     menuData3:[
         {'title':'后台首页',
+        'id':12,
         'icon':'fa-address-card',
         'isShow':true,  
         'state':'hide',
@@ -92,6 +110,7 @@ export const All_menus:MENUS={
         'children':[
         ]},
         {'title':'我的面板',
+        'id':13,
         'icon':'fa-telegram ',
         'isShow':true,  
         'state':'hide',   
@@ -101,6 +120,7 @@ export const All_menus:MENUS={
             {'name':'日志信息','url':'./loginfo'}
         ]},
         {'title':'系统设置',
+        'id':14,
         'icon':'fa-cogs ',
         'isShow':true,  
         'state':'hide',
@@ -112,6 +132,7 @@ export const All_menus:MENUS={
             {'name':'系统配置管理','url':'./sys-config-management'},
         ]},
         {'title':'项目文档',
+        'id':15,
         'icon':'fa-align-justify',
         'isShow':true,
         'state':'hide',

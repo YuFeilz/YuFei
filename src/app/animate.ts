@@ -9,25 +9,3 @@ export const MainsAnimate=trigger('mains',[
     })),
     transition('hides<=>shows',animate('.5s .5s cubic-bezier(0.2, 0.8, 0.3, 1.8)'))
 ])
-export const ListAnimate=trigger(
-    'listState',[
-        state('hide',style({
-            'height':'0',
-            'overflow':'hidden'
-        })),
-        state('show',style({
-            'height':'auto',
-            'overflow':'auto'
-        })),
-        transition('hide<=>show',animate(500))
-    ])
-export const headerNav=trigger('active',[
-    state('actived',style({
-        'background-color': '#1AA094',
-        'border-bottom':'5px solid #484c5a'
-    })),
-    state('unactived',style({
-        'background-color': 'transparent',
-        'border-bottom':'none'
-    }))
-])
