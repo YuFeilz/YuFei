@@ -7,7 +7,7 @@ import { AdComponent } from './ad.component';
     selector:'content-banner',
     template:`
             <div class="content-banner">
-              <h3>我有话说！！</h3>
+              <h3>月下独酌</h3>
               <ng-template content-host></ng-template>
             </div>`,
 })

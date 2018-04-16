@@ -9,10 +9,13 @@ export class Item{
 export class ContentService {
     getAds() {
       return [
-        new Item(ContentSysAlertComponent, {name: '惊喜在后面', bio: 'The surprise is in the back'}),
-        new Item(ContentSysAlertComponent, {name: '往下看', bio: 'Look Down'}),
-        new Item(ContentSysAlertComponent,   {name: '继续往下看', bio: 'Keep looking down '}),
-        new Item(ContentSysAlertComponent,   {name: '就想说一句卧槽', bio: 'Just want to say a slots'}),
+        new Item(ContentSysAlertComponent, {name: '花间一壶酒，独酌无相亲。', bio: 'A pot of wine, I drink alone.'}),
+        new Item(ContentSysAlertComponent, {name: '举杯邀明月，对影成三人。', bio: 'The moon was invited to three people.'}),
+        new Item(ContentSysAlertComponent,   {name: '月既不解饮，影徒随我身。', bio: 'The moon could not drink, but the shadow followed me.'}),
+        new Item(ContentSysAlertComponent,   {name: '暂伴月将影，行乐须及春。', bio: 'The moon will be a temporary shadow play beard and spring.'}),
+        new Item(ContentSysAlertComponent,   {name: '我歌月徘徊，我舞影零乱。', bio: 'I hear my song of wandering, messy.'}),
+        new Item(ContentSysAlertComponent,   {name: '醒时相交欢，醉后各分散。', bio: 'When you wake up, you are all scattered after you get drunk.'}),
+        new Item(ContentSysAlertComponent,   {name: '永结无情游，相期邈云汉。', bio: 'Always knot heartless swim, phase Miao Milky way.'}),
       ];
     }
   }

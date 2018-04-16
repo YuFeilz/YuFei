@@ -85,10 +85,10 @@ export class MainsComponent implements OnInit {
         item.isActive=false;
       }
     }
-      if(menu.id===4){
-        menu.isShow=true;
-        menu.isActive=true;
-      }else{
+    if(menu.id===4){
+      menu.isShow=true;
+      menu.isActive=true;
+    }else{
       menu.isShow=!menu.isShow;
       menu.isActive=!menu.isActive;
     }
