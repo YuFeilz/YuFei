@@ -3,7 +3,8 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router'; 
 import { trigger,state,style,animate,transition, animation } from '@angular/animations';
 import { MenusService } from './menus.service'; 
-import {MainsAnimate} from '../animate';
+import { MainsAnimate } from '../animate';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-mains',
@@ -20,7 +21,8 @@ export class MainsComponent implements OnInit {
   constructor(
     private router:Router,
     private routerfo:ActivatedRoute,
-    private menusService:MenusService
+    private menusService:MenusService,
+    private authservice:AuthService
   ) {
     
    }
@@ -48,8 +50,8 @@ export class MainsComponent implements OnInit {
    */
   logout():void{
     setTimeout(()=>{
-      this.router.navigate(['/login']);
-    },1500)
+      this.authservice.logout();
+    },500)
   }
   /**
    * @param 鼠标移入用户头像显示用户信息列表

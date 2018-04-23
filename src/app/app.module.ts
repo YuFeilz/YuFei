@@ -5,14 +5,11 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-// import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
-
 @NgModule({
   declarations: [
     AppComponent,
-    // LoginComponent,
     NotFoundPageComponent,
   ],
   imports: [
@@ -22,7 +19,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     FormsModule
   ],
   providers: [
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
   ],
   bootstrap: [AppComponent]
 })

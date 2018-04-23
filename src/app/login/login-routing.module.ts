@@ -13,6 +13,8 @@ const loginRouting:Routes=[
   imports: [
     RouterModule.forChild(loginRouting)
   ],
-  declarations: []
+  exports:[
+    RouterModule
+  ]
 })
 export class LoginRoutingModule { }

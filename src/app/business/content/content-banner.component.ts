@@ -20,7 +20,6 @@ export class ContentBannerComponent implements OnInit,OnDestroy{
     ngOnInit(): void {
         this.loopComponent();
         this.getAds();
-        console.log(this.ads)
     }
     ngOnDestroy(): void {
         clearInterval(this.interval);
