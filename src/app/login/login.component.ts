@@ -13,12 +13,7 @@ export class LoginComponent implements OnInit {
   constructor(
     public authService: AuthService,
     public router: Router
-  ) {
-    // this.setMessage();   
-   }
-  //  setMessage(){
-  //   this.message = 'Logged ' + (this.authService.isLoggedIn ? 'in' : 'out');
-  //  }
+  ) {  }
   ngOnInit() {
   }
   login():void{

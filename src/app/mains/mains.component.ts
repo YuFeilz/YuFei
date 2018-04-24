@@ -15,6 +15,7 @@ import { AuthService } from '../auth.service';
 })
 export class MainsComponent implements OnInit {
   state='hides';
+  logoutMsg='退出登录';
   menus;
   headerNav;
   slideShow=false;
@@ -47,11 +48,16 @@ export class MainsComponent implements OnInit {
   }
   /**
    * @param 退出登录
+   * 退出登陆后在次导航到mains路由会触发两次守卫提示未登录问题，找不到原因，待解决
    */
   logout():void{
-    setTimeout(()=>{
-      this.authservice.logout();
-    },500)
+    this.logoutMsg='正在注销...';
+    this.authservice.logout().subscribe(()=>{
+      if(!this.authservice.isLoggedIn){ 
+        this.router.navigate(['login']);
+      }
+      this.logoutMsg='退出登录';
+    });  
   }
   /**
    * @param 鼠标移入用户头像显示用户信息列表

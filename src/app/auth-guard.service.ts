@@ -14,7 +14,8 @@ export class AuthGuard implements CanActivate {
   checkLogin(url:string):boolean{
     if(this.authservice.isLoggedIn){
       return true;
-    }
+    } 
+    alert('亲，还没有登录！');
     this.authservice.redirectUrl=url;
     this.router.navigate(['./login']);
     return false

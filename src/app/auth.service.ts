@@ -9,11 +9,14 @@ export class AuthService {
   redirectUrl:string;
   login():Observable<boolean>{
     return of(true).pipe(
-      delay(500),
+      delay(1000),
       tap(val=>this.isLoggedIn=true)
     );
   }
-  logout(){
-    this.isLoggedIn=false;
+  logout():Observable<boolean>{
+    return of(true).pipe(
+      delay(1000),
+      tap(()=>this.isLoggedIn=false)
+    );
   }
 }
