@@ -15,11 +15,12 @@ export class LoginComponent implements OnInit {
     public router: Router
   ) {  }
   ngOnInit() {
+       
   }
   login():void{
     this.message = '正在登录...';
     this.authService.login().subscribe(()=>{
-      if(this.authService.isLoggedIn){
+      if(document.cookie.split('=')[1]="true"){
         let redirect=this.authService.redirectUrl?this.authService.redirectUrl:'/mains/content';
         this.router.navigate([redirect]);
       }

@@ -12,7 +12,7 @@ export class AuthGuard implements CanActivate {
     return this.checkLogin(url);
   }
   checkLogin(url:string):boolean{
-    if(this.authservice.isLoggedIn){
+    if(document.cookie.split('=')[1]=='true'){
       return true;
     } 
     alert('亲，还没有登录！');

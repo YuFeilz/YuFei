@@ -52,12 +52,9 @@ export class MainsComponent implements OnInit {
    */
   logout():void{
     this.logoutMsg='正在注销...';
-    this.authservice.logout().subscribe(()=>{
-      if(!this.authservice.isLoggedIn){ 
-        this.router.navigate(['login']);
-      }
-      this.logoutMsg='退出登录';
-    });  
+    document.cookie="isLoggedIn=false";
+    this.router.navigate(['login']);
+    this.logoutMsg='退出登录';
   }
   /**
    * @param 鼠标移入用户头像显示用户信息列表
